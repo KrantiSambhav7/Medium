@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import BlogCard from '../component/BlogCard'
-import Appbar from '../component/Appbar'
+import { useEffect, useState } from 'react'
 import Loader from '../component/Loader'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'

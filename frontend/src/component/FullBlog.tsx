@@ -1,4 +1,3 @@
-import React from 'react'
 import Appbar from './Appbar'
 import { Avatar } from './BlogCard';
 
@@ -15,7 +14,7 @@ interface Blog{
 const FullBlog = ({blog} : {blog: Blog} ) => {
   return (
     <div>
-      <Appbar name='Kranti'/>
+      <Appbar />
         <div className='grid grid-cols-12 px-10 h-full'>
           <div className='grid-cols-8 col-start-1 col-span-8 '>
             <div><h1 className='text-5xl font-bold'>{blog.title}</h1></div>

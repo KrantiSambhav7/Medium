@@ -1,8 +1,7 @@
-import React from 'react'
 import { Avatar } from './BlogCard'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-const Appbar = ({name = "Harkirat"} : {name: string}) => {
+const Appbar = () => {
   const navigate = useNavigate();
   return (
     <div className='border-b border-slate-400 px-4 py-4 mb-8 flex justify-between items-center'>

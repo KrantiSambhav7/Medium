@@ -9,7 +9,7 @@ const Publish = () => {
     const navigate = useNavigate();
   return (
     <div>
-        <Appbar name='Kranti'/>
+        <Appbar />
         <div className='w-1/2 mx-auto'>
             <textarea onChange={(e) => {
                 setTitle(e.target.value);

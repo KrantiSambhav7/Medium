@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import BlogCard from '../component/BlogCard'
 import Appbar from '../component/Appbar'
-import { useBlogs } from '../hooks'
 import Loader from '../component/Loader'
 import axios from 'axios'
-import Skeleton from '../component/Skeleton'
 
 interface Blog{
   title: string;
@@ -43,7 +41,7 @@ const Blogs = () => {
 
   return (
     <div>
-      <Appbar name={"Kranti"}/>
+      <Appbar />
       <div className='flex justify-center items-center'>
       <div className='w-full h-full max-w-4xl flex flex-col gap-6'>
       {blogs.map(item => (
