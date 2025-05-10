@@ -14,7 +14,7 @@ const BlogCard = ({authorName , title , content , publishedDate , id} : BlogCard
     <Link to={`/blog/${id}`}>
         <div className='border-b-1 border-slate-500 cursor-pointer'>
         <div className='flex gap-2 items-center'>
-        <Avatar name={authorName} size={6} />
+        <Avatar name={authorName} size={8} />
         <div className='font-semibold'>{authorName}</div>
         <div>.</div>
         <div className='text-slate-500'>{publishedDate}</div>
