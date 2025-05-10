@@ -4,6 +4,7 @@ import Appbar from '../component/Appbar'
 import { useBlogs } from '../hooks'
 import Loader from '../component/Loader'
 import axios from 'axios'
+import Skeleton from '../component/Skeleton'
 
 interface Blog{
   title: string;
@@ -34,7 +35,9 @@ const Blogs = () => {
 
   if(loading){
     return <div className='flex justify-center items-center h-screen'>
+      <div>
         <Loader />
+      </div>
       </div>
   }
 
