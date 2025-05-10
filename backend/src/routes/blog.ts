@@ -85,16 +85,24 @@ blogRouter.post('/', async(c) => {
       message: "The input body is invalid"
     })
   }
-  const blog = await prisma.post.create({
+  try{
+    const blog = await prisma.post.create({
     data: {
       title: body.title,
       content: body.content,
       authorId: userId
     }
   })
-  return c.json({
-    blogId: blog.id
-  })
+    return c.json({
+      blog: blog
+    })
+  }catch(e){
+    console.log(e);
+    return c.json({
+      message: "Error in creating the blog"
+    })
+  }
+
 });
 
 blogRouter.put('/', async(c) => {
